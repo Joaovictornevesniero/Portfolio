@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Victor Neves Niero | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar__tab">João Victor</div>
+  </header>
+
+  <nav class="sidebar">
+    <a class="sidebar__link is-active" href="#home">▤ João Victor Neves Niero</a>
+    <a class="sidebar__link" href="#projetos">▭ Projetos</a>
+    <a class="sidebar__link" href="#habilidades">⚙ Habilidades</a>
+    <a class="sidebar__link sidebar__link--sub" href="#hard">Hard skills</a>
+    <a class="sidebar__link sidebar__link--sub" href="#soft">Soft skills</a>
+    <a class="sidebar__link" href="#contato">✉ Contato</a>
+  </nav>
+
+  <main>
+
+    <!-- Home -->
+    <section class="section section--home" id="home">
+      <pre class="logo">     ██╗██╗   ██╗
+     ██║██║   ██║
+     ██║██║   ██║
+██   ██║╚██╗ ██╔╝
+╚█████╔╝ ╚████╔╝
+ ╚════╝   ╚═══╝</pre>
+
+      <div class="profile">
+        <div class="profile__name">João Victor Neves Niero</div>
+        <div class="profile__role">Desenvolvedor Back-end Júnior</div>
+      </div>
+
+      <div class="container panel" id="sobre">
+        <h3 class="panel__title">Sobre mim</h3>
+        <p>Me chamo João Victor Neves Niero, tenho 24 anos e sou formado em Análise e Desenvolvimento de Sistemas pela Unicid.</p>
+        <p>Antes de programar, trabalhei com eletrônica, mecânica e obras de engenharia civil. Isso me deixou atento a detalhes e acostumado a diagnosticar problemas até achar a causa.</p>
+        <p>Hoje desenvolvo projetos práticos focados em solucionar problemas, buscando minha primeira oportunidade como desenvolvedor back-end.</p>
+        <p>Busco uma empresa onde eu possa aplicar minha capacidade de resolver problemas com atenção técnica e crescer como desenvolvedor, contribuindo com código organizado e proatividade.</p>
+        <ul class="facts">
+          <li><span>idade:</span> 24 anos</li>
+          <li><span>formação:</span> ADS — Unicid</li>
+          <li><span>foco:</span> Desenvolvimento back-end</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="section" id="projetos">
+      <div class="container container--wide">
+        <h2 class="section-title">// Projetos</h2>
+
+        <div class="project-grid">
+
+        <!-- Tradutor (destaque, com comparador antes/depois) -->
+        <article class="project-card project-card--featured">
+          <div class="compare" aria-label="Comparação antes e depois do tradutor">
+            <div class="compare__layer">
+              <img src="img/tradutor-original.PNG" alt="Tela original em inglês">
+              <span class="compare__label compare__label--right">original</span>
+            </div>
+            <div class="compare__layer compare__layer--top">
+              <img src="img/tradutor-traduzido.PNG" alt="Tela traduzida">
+              <span class="compare__label compare__label--left">traduzido</span>
+            </div>
+            <div class="compare__divider"></div>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">Tradutor OCR + LLM</h4>
+            <p class="project-card__text">Traduz a tela de jogos em tempo real: captura a área escolhida, lê o texto com OCR (Tesseract) e usa um LLM local (Ollama) para corrigir e traduzir. Passe o mouse (ou arraste) na imagem para comparar o antes e o depois.</p>
+            <div class="tag-list"><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">Ollama</span><span class="tag">OCR</span><span class="tag">Tesseract</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://www.youtube.com/watch?v=QRqVNCrFp_g" target="_blank" rel="noopener">▶ Vídeo</a>
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/Tradutor" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="gallery">
+            <div class="gallery__track">
+              <img src="img/alerta-landing.png" alt="Landing page do Alerta de Jogo Grátis" loading="lazy">
+              <img src="img/alerta-email-cadastro.png" alt="E-mail recebido logo após o cadastro" loading="lazy">
+              <img src="img/alerta-email-jogo.png" alt="E-mail com o jogo grátis da semana e resumo da IA" loading="lazy">
+            </div>
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Imagem anterior">‹</button>
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Próxima imagem">›</button>
+            <span class="gallery__counter"></span>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">Alerta de Jogo Grátis</h4>
+            <p class="project-card__text">Automação de ponta a ponta: monitora a Epic Games, detecta quando o jogo grátis muda e usa um LLM (Groq, com Gemini de reserva) para gerar o resumo em JSON validado e enviar por e-mail aos inscritos. Back-end em Google Apps Script publicado como Web App, 100% em serviços gratuitos e sem servidor próprio.</p>
+            <div class="tag-list"><span class="tag">Automação</span><span class="tag">Prompt engineering</span><span class="tag">Groq</span><span class="tag">Gemini</span><span class="tag">Google Apps Script</span><span class="tag">GitHub Pages</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://joaovictornevesniero.github.io/alerta-jogo-gratis/" target="_blank" rel="noopener">↗ Site</a>
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/alerta-jogo-gratis" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="gallery">
+            <div class="gallery__track">
+              <img src="img/reputacao-maps.png" alt="Local analisado no Google Maps" loading="lazy">
+              <img src="img/reputacao-dashboard.png" alt="Dashboard com indicadores e distribuição de notas" loading="lazy">
+              <img src="img/reputacao-evolucao.png" alt="Evolução da nota média ao longo do tempo" loading="lazy">
+              <img src="img/reputacao-analise-ia.png" alt="Análise gerada pela IA" loading="lazy">
+              <img src="img/reputacao-chat.png" alt="Chat com a IA sobre as avaliações" loading="lazy">
+            </div>
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Imagem anterior">‹</button>
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Próxima imagem">›</button>
+            <span class="gallery__counter"></span>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">Raio-X de Reputação de Comércios</h4>
+            <p class="project-card__text">Coleta até 500 avaliações de qualquer local do Google Maps, monta um dashboard com indicadores e gráficos e usa um LLM local para diagnosticar pontos fortes e gargalos. O dono ainda conversa com a IA, que responde só com base nas avaliações reais. Tudo roda localmente.</p>
+            <div class="tag-list"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Pandas</span><span class="tag">Selenium</span><span class="tag">Ollama</span><span class="tag">Prompt engineering</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/Reputacao_comercio" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="gallery">
+            <div class="gallery__track">
+              <img src="img/gametracker-v2-dashboard.PNG" alt="GameTracker v2 dashboard" loading="lazy">
+              <img src="img/gametracker-v2-jogos.PNG" alt="GameTracker v2 jogos" loading="lazy">
+              <img src="img/gametracker-v2-historico.PNG" alt="GameTracker v2 histórico" loading="lazy">
+            </div>
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Imagem anterior">‹</button>
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Próxima imagem">›</button>
+            <span class="gallery__counter"></span>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">GameTracker v2</h4>
+            <p class="project-card__text">Rastreador de tempo de gameplay com interface gráfica, dashboard, histórico de sessões e funcionalidade de emulador.</p>
+            <div class="tag-list"><span class="tag">Python</span><span class="tag">PySide6</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/GameTracker-v2/releases/tag/v0.2" target="_blank" rel="noopener">⬇ Download</a>
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/GameTracker-v2" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="gallery">
+            <div class="gallery__track">
+              <img src="img/estoque-produtos.PNG" alt="Estoque+ produtos" loading="lazy">
+              <img src="img/estoque-movimentacoes.PNG" alt="Estoque+ entradas e saídas" loading="lazy">
+              <img src="img/estoque-config.PNG" alt="Estoque+ configurações" loading="lazy">
+            </div>
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Imagem anterior">‹</button>
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Próxima imagem">›</button>
+            <span class="gallery__counter"></span>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">Sistema de estoque</h4>
+            <p class="project-card__text">Estoque+: CRUD de produtos, alerta de estoque baixo, histórico de entradas e saídas com filtros e configurações da loja.</p>
+            <div class="tag-list"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">SQLite</span><span class="tag">CRUD</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/Sistema_Geral" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="gallery">
+            <div class="gallery__track">
+              <img src="img/gametracker-v1-hud.jpg" alt="GameTracker v1 menu" loading="lazy">
+              <img src="img/gametracker-v1-cadastro.jpg" alt="GameTracker v1 cadastro e relatório" loading="lazy">
+            </div>
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Imagem anterior">‹</button>
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Próxima imagem">›</button>
+            <span class="gallery__counter"></span>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">GameTracker v1</h4>
+            <p class="project-card__text">Rastreador de tempo de gameplay em terminal. O cadastro semi-automático compara os processos do Windows antes e depois de abrir o jogo.</p>
+            <div class="tag-list"><span class="tag">Python</span><span class="tag">Terminal</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/GameTracker-v1/releases/tag/v1.0" target="_blank" rel="noopener">⬇ Download</a>
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/GameTracker-v1" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="gallery">
+            <div class="gallery__track">
+              <img src="img/os-lista.PNG" alt="Controle de O.S. lista" loading="lazy">
+              <img src="img/os-editar.PNG" alt="Controle de O.S. edição" loading="lazy">
+              <img src="img/os-recibo.PNG" alt="Controle de O.S. recibo" loading="lazy">
+            </div>
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Imagem anterior">‹</button>
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Próxima imagem">›</button>
+            <span class="gallery__counter"></span>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">Controle de O.S.</h4>
+            <p class="project-card__text">Sistema de ordem de serviço para oficina automotiva: cadastro e edição de OS, status, recibo para impressão ou WhatsApp e backup.</p>
+            <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://joaovictornevesniero.github.io/Controle-O.S/" target="_blank" rel="noopener">↗ Site</a>
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/Controle-O.S" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="gallery">
+            <div class="gallery__track">
+              <img src="img/adega-catalogo.PNG" alt="Catálogo da adega" loading="lazy">
+              <img src="img/adega-pedido.PNG" alt="Carrinho do pedido" loading="lazy">
+              <img src="img/adega-whatsapp.PNG" alt="Pedido enviado no WhatsApp" loading="lazy">
+            </div>
+            <button class="gallery__arrow gallery__arrow--prev" type="button" aria-label="Imagem anterior">‹</button>
+            <button class="gallery__arrow gallery__arrow--next" type="button" aria-label="Próxima imagem">›</button>
+            <span class="gallery__counter"></span>
+          </div>
+          <div class="project-card__body">
+            <h4 class="project-card__title">Catálogo Adega</h4>
+            <p class="project-card__text">Protótipo de site de venda para adega: catálogo com busca e categorias, carrinho e envio do pedido pronto pelo WhatsApp.</p>
+            <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">GitHub Pages</span></div>
+            <div class="project-card__links">
+              <a class="link-button" href="https://joaovictornevesniero.github.io/catalogo-adega-et/" target="_blank" rel="noopener">↗ Site</a>
+              <a class="link-button" href="https://github.com/Joaovictornevesniero/catalogo-adega-et" target="_blank" rel="noopener">{ } Código</a>
+            </div>
+          </div>
+        </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section" id="habilidades">
+      <h2 class="section-title">// Habilidades</h2>
+
+      <div class="container panel" id="hard">
+        <h3 class="panel__title">Hard skills</h3>
+      <div class="skill-group">
+        <h4 class="skill-group__title">Back-end e dados</h4>
+        <div class="tag-list"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">API REST</span><span class="tag">MySQL</span><span class="tag">SQLite</span><span class="tag">Swagger / OpenAPI</span><span class="tag">Pandas</span></div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group__title">Linguagens</h4>
+        <div class="tag-list"><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group__title">IA e automação</h4>
+        <div class="tag-list"><span class="tag">Prompt engineering</span><span class="tag">APIs de LLM (Groq, Gemini)</span><span class="tag">Saída estruturada (JSON)</span><span class="tag">Ollama (LLM local)</span><span class="tag">Análise de dados com IA</span><span class="tag">Automação com gatilhos (Apps Script)</span><span class="tag">Selenium</span><span class="tag">Playwright</span><span class="tag">OCR</span></div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group__title">Testes e qualidade</h4>
+        <div class="tag-list"><span class="tag">Jest</span><span class="tag">Playwright (E2E)</span><span class="tag">Postman / Newman</span></div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group__title">DevOps e entrega</h4>
+        <div class="tag-list"><span class="tag">Docker</span><span class="tag">GitHub Actions (CI/CD)</span></div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group__title">Ferramentas e metodologias</h4>
+        <div class="tag-list"><span class="tag">Git / GitHub</span><span class="tag">Git Flow</span><span class="tag">Jira</span><span class="tag">Streamlit</span><span class="tag">PySide6</span><span class="tag">Scrum</span><span class="tag">Kanban</span></div>
+      </div>
+      </div>
+
+      <div class="container panel panel--soft" id="soft">
+        <h3 class="panel__title">Soft skills</h3>
+        <div class="tag-list"><span class="tag">Trabalho em equipe</span><span class="tag">Facilidade de aprendizado</span><span class="tag">Adaptabilidade</span><span class="tag">Solução de problemas</span><span class="tag">Empatia</span><span class="tag">Pensamento crítico</span><span class="tag">Escuta ativa</span><span class="tag">Autogestão</span></div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section" id="contato">
+      <h2 class="section-title">// Contato</h2>
+
+      <div class="container panel">
+        <h3 class="panel__title">Vamos conversar</h3>
+        <div class="contact-row">
+          <span class="contact-row__key">[e]</span> Email
+          <span class="contact-row__value">Joao.victornn@Yahoo.com.br</span>
+        </div>
+        <a class="contact-row" href="https://linkedin.com/in/joaoniero" target="_blank" rel="noopener">
+          <span class="contact-row__key">[l]</span> LinkedIn
+          <span class="contact-row__value">linkedin.com/in/joaoniero</span>
+        </a>
+        <a class="contact-row" href="https://github.com/Joaovictornevesniero" target="_blank" rel="noopener">
+          <span class="contact-row__key">[g]</span> GitHub
+          <span class="contact-row__value">github.com/Joaovictornevesniero</span>
+        </a>
+      </div>
+
+      <p class="footer">© 2026 João Victor Neves Niero</p>
+    </section>
+
+  </main>
+
+  <!-- Lightbox (preenchido pelo main.js) -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox__counter" id="lightbox-counter"></span>
+    <button class="lightbox__button lightbox__button--prev" type="button" aria-label="Anterior">‹</button>
+    <img alt="">
+    <button class="lightbox__button lightbox__button--next" type="button" aria-label="Próxima">›</button>
+    <button class="lightbox__button lightbox__button--close" type="button" aria-label="Fechar">✕</button>
+  </div>
+
+</body>
+</html>
